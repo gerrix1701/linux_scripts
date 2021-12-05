@@ -1,7 +1,7 @@
 # linux_scripts
 Just some scripts for Linux - might be useful, might be not - just for the fun of it :-)
 
-Just some small scripts, no big deal.
+Some small scripts, no big deal.
 I do take care when writing scripts, however please don't blame me if anything get's messed up...
 
 
