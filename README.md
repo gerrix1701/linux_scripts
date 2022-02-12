@@ -5,6 +5,5 @@ Some small scripts, no big deal.
 I do take care when writing scripts, however please don't blame me if anything get's messed up...
 
 
-- kernel-remover-debian.sh
-
-Script for Debian based distros to remove obsolete kernel packages which tend to pile up over time. It will ask before actually removing anything and of course will not touch the running kernel - at least it isn't supposed to...
+## kernel-remover-debian.sh
+Script for Debian based distros to remove obsolete kernel packages which tend to pile up over time. It will ask before actually removing anything and of course will not touch the running kernel - at least it isn't supposed to.
