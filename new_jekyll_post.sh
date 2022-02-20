@@ -42,6 +42,7 @@ url=
 if [ -z $1 ]; then
   echo "ERROR: missing title"
   echo "INFO: please run: $0 \"New blog title\""
+  exit 1
 fi
 
 ## variables
