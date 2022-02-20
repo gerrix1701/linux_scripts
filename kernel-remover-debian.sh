@@ -2,13 +2,12 @@
 ##
 ## ++++++++++++++++++++++++++++++++++++++++++++++
 ## kernel-remover-debian.sh
-## by gerrit (http://www.funzt.info/)
 ## ++++++++++++++++++++++++++++++++++++++++++++++
 ##
-## Vers 1.1, Oct 2020
+## Vers 1.1, Oct 2020, Gerrit <gerrit@funzt.info>
 ## - replaced apt-get by apt
 ## - removed support for older Debian versions
-## Vers 1.0, June 2012
+## Vers 1.0, June 2012, Gerrit <gerrit@funzt.info>
 ## - initial version
 ##
 ## script removing obsolete kernels from Debian based distros
