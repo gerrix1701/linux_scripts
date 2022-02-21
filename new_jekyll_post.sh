@@ -39,7 +39,7 @@ url=
 
 ### no need to change anything below here ###
 
-if [ -z $1 ]; then
+if [ -z "$1" ]; then
   echo "ERROR: missing title"
   echo "INFO: please run: $0 \"New blog title\""
   exit 1
@@ -54,6 +54,10 @@ slug=`echo $1 | sed -e 's/\ /-/g' | tr '[:upper:]' '[:lower:]'`
 link=${url}/${y}/${m}/${slug}
 
 ## generate template
-echo -e "---\nauthor: ${author}\ncomments: ${comments}\ndate: ${time}\nlayout: ${layout}\n\
-link: ${link}\nslug: ${slug}\ntitle: $1\ncategories:\ntags:\n---" > ${y}-${m}-${d}-${slug}.markdown
+if [ ! -f ${post_path}/${y}-${m}-${d}-${slug}.markdown ]; then
+  echo -e "---\nauthor: ${author}\ncomments: ${comments}\ndate: ${time}\nlayout: ${layout}\n\
+link: ${link}\nslug: ${slug}\ntitle: $1\ncategories:\ntags:\n---" > ${post_path}/${y}-${m}-${d}-${slug}.markdown && echo "INFO: \"${y}-${m}-${d}-${slug}.markdown\" created."
+else
+  echo "ERROR: post already present, aborting."
+fi
 
